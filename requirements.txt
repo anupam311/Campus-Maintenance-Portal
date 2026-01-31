@@ -2,4 +2,5 @@ Flask
 Flask-Cors
 qrcode
 pillow
-gunicore
+
+gunicorn
