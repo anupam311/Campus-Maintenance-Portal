@@ -1,0 +1,72 @@
+{
+    "reports": [
+        {
+            "ticket_id": "CL20260127205604",
+            "name": "Anupam Chaudhary",
+            "email": "cakansha102@gmail.com",
+            "phone": "+918368001503",
+            "block": "A",
+            "floor": "2",
+            "room_no": "202",
+            "category": "Plumbing",
+            "other_detail": "",
+            "priority": "Medium",
+            "issue_date": "2026-01-27",
+            "description": "bgdgfxg",
+            "timestamp": "2026-01-27 20:56:04",
+            "status": "Pending",
+            "qr_code": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAACE0lEQVR4nO1bwW3DMAw80gLytIEO0FHsDTpSV7NHyQAB7GeABCxISW6al9FHTMS8hxEp9yBIkTzRCQk2YuKtTCCoHM5CHJfN4KAinLUZHFQoqCABU2fLBGCp20M4y9Vx6UUx66czEdDeQAMa2xVntm4Bvzd1KSlE1DUanjvZdskyX7Yel5qe1jINdxIsJwGWVxjAQcX/ndXPjeTmlbtV+NVhbrVa/jSZpq+bLi+aYIB4spUPT8WjjkAjObfKo26bBhnDWewjWr/IIVNNWHTiinF3W/nwVDzGSKEZZVpeRlPwc5HxEtGCm+PSXvMtS0ZdTZ/WvG766Rq3Y2cqQ7AkFe8JZHqjnyGE9hUGcFCxHZJhskJrYi+WYI2UShh9y5+Cn4ZGFfzHTbSD2RyDenFmKwcVf/sWDTZ0sg626JA3prrujgt9691KI5N3+3MCDW2VGq5sPTI12VMm0nnT1yVpOdRKqMNCK4fzvQ40eG9b+fDUZB6gfu7WWa4FSlDSzL41Wc+Hdxb7m2W02rLqLONhoDHubisHFU/vjkuC2SNUhvd3x8jqsEhEu345s/XAVOT6Z/P2PHlflxnrfHfc3VY+PDU9eUCwdDodFL0xawTH0IR+jwsN9b5lqSbjcpL4zZO3Sih1WIjWhKGWvqoOQxM6i1bB+iKyvt/KKiP6lpNoUfxrATuHgIOKcNZmcFARztqMN3XWDyoxT2uZ6renAAAAAElFTkSuQmCC"
+        },
+        {
+            "ticket_id": "CL20260127212213",
+            "name": "Anupam Chaudhary",
+            "email": "chaudharyanupam746@gmail.com",
+            "phone": "+918368001503",
+            "block": "B",
+            "floor": "1",
+            "room_no": "110",
+            "category": "Electrical",
+            "other_detail": "",
+            "priority": "Low",
+            "issue_date": "2026-01-05",
+            "description": "wefcewrvcewvcwcv",
+            "timestamp": "2026-01-27 21:22:13",
+            "status": "Pending",
+            "qr_code": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAACHUlEQVR4nO1bS27bMBB9pAh4aQE5QI5C3aBn7Q2ko/gAAcRlAQlTPA7VIF4UbADH02jegpLotxjMiPOVg6ATS+xlAk6Nriz469KN6FS4sroRnQoiNCQAJSGEcQ9hKsf25Moy9bpkIVagWkZkHZh9DHVXjMl6Ympq1zIC+ScgwIYADJugQO+syBqdio9o7tCV9V+8LjJfNy6/wpME+Asizk5N7XpldKqu77on5HXXbbEka3QqKpaa+43MN24XAcpFwoRdU0JXlq2zJX+eZRkRBKAnrOft0QJEp6If8p6j55Wrxi3u6d2mFJldr9FI3Mrznpi8J6lOkMFLWCfXouuhAkSnoh+iB4eHKa8sh7nMmh3WvaN2nl2v0YwnHGiyTS3T7CbVCbY9cWvBiLVEw9PKE0XXl9VQhxk9bpmyFjQ8Vdd3OMZWJ7u17Fkr18PEXi7vNB3UHzxuWaQOguV1Y52cIHJLWjHrebMm62mpqV3LyxbyjW2L61vCMtX2e21yPFiA6FT8ey9j4yJ1RCIhC5uFMxBYiLlezc6O8y0xtyC0Ov4SAboQcXZq0gvPEd0hjhkkwfLLexkWqaV9fqHfYNQSWbOM4wfYkfW81HS/sYyDtuTrEtiID0ZkjU7FHfLKz5042poYtxbOvFxZRmfHoHlEo1XhuOvHgwWITsXnZ8eERjB9LD47tvNmBf/XAp5sguhUuLK6EZ0KV1Y3vqmyfgOCdh6oxKLuTgAAAABJRU5ErkJggg=="
+        },
+        {
+            "ticket_id": "CL20260127212922",
+            "name": "Anupam Chaudhary",
+            "email": "cakansha102@gmail.com",
+            "phone": "+918368001503",
+            "block": "A",
+            "floor": "4",
+            "room_no": "409",
+            "category": "IoT",
+            "other_detail": "",
+            "priority": "Urgent",
+            "issue_date": "2026-01-27",
+            "description": "ycgfcnhf",
+            "timestamp": "2026-01-27 21:29:22",
+            "status": "Pending",
+            "qr_code": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAAB+0lEQVR4nO1bQW6EMAyceJF6XH7Qp8AP+qY+qT+Ap/QH5FgJ5Mp2Qrc9VLlU6248BzbAHCwPdiaETYxGrNTKBIJKkSzE49IMCioiWc2goEKQCgYAeUBK45HSnOvlOZLl6nGZWLABqgzzdhH3cdGr7CzWjqlD+c0jML0BDOxIwGVnZNjIS6wUVHxHaYeRrH/xuPBy3eXwke4UwC8g9E4dyu9VZidtfddjwLQddpk9xUpBhWJV7zeK33h/YiA/cZpxmCWMZPmqLT7PeR2RGJBOqPX21wFQUNEO/vLo0yZHm7fkmo12o/ASeSUnak0qmSqjSy0bqekwrTjUghe1eDnlEbV4MXcoMm517bzcPVbqnopaW3t9oaGnIhmzNsF6Y4lkkZfagsijrQ9nJ7QJrbx+4lALTtTCWUziBLm0Q3UZoZZDtbjU0Y0xLDLGvOWPmlOyiapUVFkxa6l5i7Vf6lAH8qpdXsQbZJNLB2vyEyt1T0X1gdUOWjusTvDGLC6RLHK3dzyZMRTkwWOsTaA+9o759XlHmlWoq+5DlsUy3MTaAnpsai6fX1ShmIvLqDfgJ9YGUCfUqXbCMo2FJ/Ss1qqfO8nWllbZOjqOFb3vHStYjaGc8vriJ1YKKn7sHQtsBrPTHHvHfh6XFP9awJ0loKAiktUMCioiWc140GR9Aj7rT/TeQmdhAAAAAElFTkSuQmCC"
+        },
+        {
+            "ticket_id": "CL20260128144624",
+            "name": "anupam chaudhary",
+            "email": "chaudharyanupam746@gmail.com",
+            "phone": "+918368001503",
+            "block": "A",
+            "floor": "6",
+            "room_no": "56",
+            "category": "Electrical",
+            "other_detail": "",
+            "priority": "Low",
+            "issue_date": "2026-01-28",
+            "description": "reak light",
+            "timestamp": "2026-01-28 14:46:24",
+            "status": "Pending",
+            "qr_code": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAACLElEQVR4nO1awW3DMAw80gb6dIAMJG/QkYKO1A2sUTJAAftZwAELUlKaFiigPNoIFe+R2PI9CNInnSiToBKRa5mAU9mTBX9dqsFOhSerGuxUKChjBM24EM0bEbCV4dmT1dTrEkSxAvJCTyKLVnDGYKPSWKw14P9N3YqEwqpSOwypRqa3PwmgAlxD6ow67Sq1d3pYAD+C0Tt1/D4Qn99GiQQItr8IgJ2Ku6s16cyn5QnnJ6EgAIVXLZnntb03K5r3O5i3UGxWxUuyhI3Fit61JbdDF8qToOnttwNgp6Iekjy6eYt1SOY9GXfRW3tq/n7xvPKj3yyUygCyTFa38qNePlXQsDw8Vu6eilwKDKk8qW7ppwjMtdXgTCiLToeGIHplY1ZG11ZLVLFW0+k8lpIlT6iY3smeopVYe6biRlv5yibGsoz5utUolebrLuskO+i0Xsi05T34VqqFG4+e/IapTL2FPfV1q6Vqjfl/O0Ci9jHCantllZXq7dcDYKfizmRJWqNs3bKzk89bz2tz2qJ8N+zWdBKVGrAdd4TXYzOxcvdU3K5bqfNkS1beZSWL6L2MRs+OSe1gahtqXx5h1c802oq1X+r4fSCSTYcEBN11RRqEGomVnYqvENGtlokp2icZ0/XMnz1ZaOzsmFRRAuz5QTj7VzTNVSsmAQ3JCZK5DGwH7WVIcYz86Fi5e+poGfjcV6msym05O85/3H2y2DMA11Y12KnwZFWDnYpqfAAs9UMZQxFrDAAAAABJRU5ErkJggg=="
+        }
+    ]
+}

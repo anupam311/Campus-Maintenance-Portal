@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Maintenance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CampusLink</h1>
+            <p>Report maintenance issues instantly.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </header>
+
+        <form id="maintenanceForm">
+            
+            <div class="form-section">
+                <h3 class="section-title"> Your Information</h3>
+                
+                <div class="input-group">
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone <span class="required">*</span></label>
+                        <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form-section">
+                <h3 class="section-title"> Location Details</h3>
+                
+                <div class="input-group">
+                    <label>Select Block <span class="required">*</span></label>
+                    <div class="block-grid">
+                        <input type="radio" name="block" value="A" id="blockA" required>
+                        <label for="blockA" class="block-btn">Block A</label>
+                        
+                        <input type="radio" name="block" value="B" id="blockB">
+                        <label for="blockB" class="block-btn">Block B</label>
+                        
+                        <input type="radio" name="block" value="C" id="blockC">
+                        <label for="blockC" class="block-btn">Block C</label>
+                        
+                        <input type="radio" name="block" value="D" id="blockD">
+                        <label for="blockD" class="block-btn">Block D</label>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Floor Number <span class="required">*</span></label>
+                        <input type="number" name="floor" placeholder="e.g. 2" min="1" max="10" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Room or Lab Number <span class="required">*</span></label>
+                        <input type="text" name="room_no" placeholder="e.g. 202 or Lab A1" required>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form-section">
+                <h3 class="section-title"> Issue Details</h3>
+                
+                <div class="input-group">
+                    <label>Problem Category <span class="required">*</span></label>
+                    <select name="category" id="category" required>
+                        <option value="">-- Select a Category --</option>
+                        <option value="Plumbing"> Plumbing</option>
+                        <option value="Electrical"> Electrical</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="IoT"> IoT</option>
+                        <option value="HVAC"> HVAC/Cooling</option>
+                        <option value="Other"> Other Issues</option>
+                    </select>
+                </div>
+
+                <div class="input-group hidden" id="otherBox">
+                    <label>Specify Problem <span class="required">*</span></label>
+                    <input type="text" name="other_detail" placeholder="What is the issue?" id="otherInput">
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Priority Level <span class="required">*</span></label>
+                        <select name="priority" required>
+                            <option value="">-- Select Priority --</option>
+                            <option value="Low"> Low (Can wait a week)</option>
+                            <option value="Medium">Medium (Within 3 days)</option>
+                            <option value="High">High (Within 24 hours)</option>
+                            <option value="Urgent">Urgent (Immediate)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Date of Issue <span class="required">*</span></label>
+                        <input type="date" name="issue_date" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Description <span class="required">*</span></label>
+                    <textarea name="description" rows="4" placeholder="Describe the leak, broken light, etc..." required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn"> Submit Report</button>
+        </form>
+
+        
+        <div id="responseMessage" class="hidden">
+            <div class="success-box">
+                <h2>✓ Report Submitted Successfully!</h2>
+                <p>Your ticket ID: <strong id="ticketId"></strong></p>
+                <p>We have received your maintenance request. Our team will contact you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> by BRO CODERS</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
