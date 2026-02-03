@@ -212,7 +212,7 @@ textarea {
 }
 
 
-button[type="submit"] {
+.button{
     width: 100%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -227,16 +227,16 @@ button[type="submit"] {
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
-button[type="submit"]:hover:not(:disabled) {
+.button:hover:not(:disabled) {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
 }
 
-button[type="submit"]:active:not(:disabled) {
+.button:active:not(:disabled) {
     transform: translateY(-1px);
 }
 
-button[type="submit"]:disabled {
+.button:disabled {
     opacity: 0.7;
     cursor: not-allowed;
 }
