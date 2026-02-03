@@ -92,7 +92,7 @@ form.addEventListener('submit', async (e) => {
         const submitAnother = document.createElement('button');
         submitAnother.type = 'button';
         submitAnother.textContent = 'Submit Another Report';
-        submitAnother.className = 'submit-another';
+        submitAnother.className = 'button';
 
         submitAnother.onclick = () => {
             form.reset();
@@ -116,3 +116,4 @@ form.addEventListener('submit', async (e) => {
 });
 
 console.log('Campus Maintenance Portal loaded ✔');
+
