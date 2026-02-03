@@ -1,4 +1,3 @@
-
 const categorySelect = document.getElementById('category');
 const otherBox = document.getElementById('otherBox');
 const otherInput = document.getElementById('otherInput');
@@ -7,10 +6,7 @@ const progressFill = document.getElementById('progressFill');
 const submitBtn = document.getElementById('submitBtn');
 const responseMessage = document.getElementById('responseMessage');
 
-// API base — override at runtime by setting window.__API_BASE__ (e.g. 'https://api.example.com')
-// If left empty, the script will use relative '/api/maintenance' (same origin).
-const API_BASE = window.__API_BASE__ || ((location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://127.0.0.1:5500' : '');
-
+// ---------- CATEGORY LOGIC ----------
 categorySelect.addEventListener('change', () => {
     if (categorySelect.value === 'Other') {
         otherBox.classList.remove('hidden');
@@ -23,7 +19,7 @@ categorySelect.addEventListener('change', () => {
     updateProgressBar();
 });
 
-
+// ---------- PROGRESS BAR ----------
 function updateProgressBar() {
     const requiredFields = form.querySelectorAll(
         'input[required], select[required], textarea[required]'
@@ -48,11 +44,11 @@ function updateProgressBar() {
 form.addEventListener('input', updateProgressBar);
 form.addEventListener('change', updateProgressBar);
 
-
+// ---------- DEFAULT DATE ----------
 const issueDate = document.querySelector('input[name="issue_date"]');
 issueDate.value = new Date().toISOString().split('T')[0];
 
-
+// ---------- FORM SUBMIT ----------
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -69,15 +65,14 @@ form.addEventListener('submit', async (e) => {
         other_detail: formData.get('other_detail') || '',
         priority: formData.get('priority'),
         issue_date: formData.get('issue_date'),
-        description: formData.get('description'),
-        timestamp: new Date().toISOString()
+        description: formData.get('description')
     };
 
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
 
     try {
-        const response = await fetch(`${API_BASE}/api/maintenance`, {
+        const response = await fetch('/api/maintenance', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -89,25 +84,16 @@ form.addEventListener('submit', async (e) => {
             throw new Error(result.message || 'Submission failed');
         }
 
-        // SUCCESS
+        // SUCCESS UI
         responseMessage.classList.remove('hidden');
         form.style.display = 'none';
         document.getElementById('ticketId').textContent = result.ticket_id;
 
-        // Add "Submit Another" button
         const submitAnother = document.createElement('button');
         submitAnother.type = 'button';
         submitAnother.textContent = 'Submit Another Report';
-        submitAnother.style.marginTop = '20px';
-        submitAnother.style.padding = '12px 24px';
-        submitAnother.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-        submitAnother.style.color = 'white';
-        submitAnother.style.border = 'none';
-        submitAnother.style.borderRadius = '8px';
-        submitAnother.style.cursor = 'pointer';
-        submitAnother.style.fontSize = '1rem';
-        submitAnother.style.fontWeight = '700';
-        
+        submitAnother.className = 'submit-another';
+
         submitAnother.onclick = () => {
             form.reset();
             form.style.display = 'block';
@@ -118,17 +104,15 @@ form.addEventListener('submit', async (e) => {
             submitBtn.textContent = 'Submit Report';
             submitAnother.remove();
         };
-        
+
         responseMessage.appendChild(submitAnother);
 
     } catch (error) {
         console.error(error);
-        alert('Backend not connected.\nMake sure Flask is running on http://127.0.0.1:5500');
+        alert('Submission failed. Please try again.');
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit Report';
     }
 });
 
-
-console.log('Campus Maintenance Form loaded successfully!');
-console.log('Backend API base:', API_BASE || 'same origin (/api/maintenance)');
+console.log('Campus Maintenance Portal loaded ✔');
