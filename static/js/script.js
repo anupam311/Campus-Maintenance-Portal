@@ -1,4 +1,4 @@
-// static/js/script.js
+
 
 const categorySelect = document.getElementById('category');
 const otherBox = document.getElementById('otherBox');
